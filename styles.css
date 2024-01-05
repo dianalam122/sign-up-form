@@ -1,7 +1,6 @@
 :root{
     --primaryText: #edfbff;
     --secondaryText:#a1b1b6;
-    --tertiaryText: #a4b4b8;
 }
 
 *{
@@ -31,7 +30,7 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
     margin: 5rem;
-    width: clamp(20rem, 20rem, 30rem)
+    width: clamp(20rem, 20rem, 40rem)
 }
 
 .on-blur-content > *:not(:last-child){
@@ -51,16 +50,30 @@ h1{
 
 p{
     color: var(--secondaryText);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 button{
     border: none;
     padding: 0.5rem;
     width: clamp(5rem, 15%, 7rem);
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.35);
     color: var(--primaryText);
+}
+
+input{
+    background-color: rgba(255, 255, 255, 0.30);
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    padding: 0.2rem;
+}
+
+::placeholder{
+    color: var(--primaryText);
+    padding: 0.3rem;
+    font-size: 0.7rem;
 }
 
