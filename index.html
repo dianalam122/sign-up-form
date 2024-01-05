@@ -4,32 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up page</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Sign Up</h1>
-        <p>Enter your name and email address below and we will email you your setup information.
-            You can sign in from your web address which looks like this:
-        </p>
-        <form action="results.html" method="GET">
-            <label for="first-name">First name </label>
-            <input type="text" id="first-name" name="first-name">
+    <div class="blur-container">
 
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="first-name">
+        <div class="on-blur-content">
+            <h1>Sign Up</h1>
+            <p>Enter your name and email address below and we will email you your setup information.
+                You can sign in from your web address which looks like this:
+            </p>
+            <form action="results.html" method="GET">
+                <div class="first-row">
+                    <label for="first-name"></label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First name">
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="some.random@email.com">
+                    <label for="last-name"></label>
+                    <input type="text" id="last-name" name="first-name" placeholder="Last name">
+                </div>
+                
+                <div class="second-row">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="random@123.com">
+                </div>
+                <div class=third-row>
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Password">
 
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Password">
-
-            <label for="confirm-password">Confirm password</label>
-            <input type="password" id="confirm-password" name="password" placeholder="Confirm password">
-        </form>
-    
-
+                    <label for="confirm-password"></label>
+                    <input type="password" id="confirm-password" name="password" placeholder="Confirm password">
+                </div>
+                
+            </form>
+            <button class="submit" type="submit">Submit</button>
+        </div>
     </div>
-    
 </body>
 </html>
